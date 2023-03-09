@@ -1,37 +1,43 @@
-body{
+body {
     background: #87cefa88;
     margin: 0;
-    margin-inline: 15%;
     font-size: 125%;
-    font-weight: 600;  
+    font-weight: 600;
     font-family: 'Raleway', sans-serif;
-}
-#entrar_no_sistema{
+  }
+  
+  #entrar_no_sistema {
     background-color: #f5f5f5;
     background-color: #f5f5f5;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-#entrar_no_sistema h1{
+  }
+  
+  #entrar_no_sistema h1 {
     text-align: center;
     background-color: #57a1cf;
     color: #f5f5f5;
     box-shadow: #000000ab 0px 1px 4px 1px;
-}
-#lista_topicos{
-    margin-inline: 50px;
-}
-#lista_topicos li{
+    margin: 0;
+    padding: 20px;
+  }
+  
+  #lista_topicos {
+    margin-inline: 5%;
+  }
+  
+  #lista_topicos li {
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-#campos-login{
+  }
+  
+  #campos-login {
     list-style-type: none;
-    padding-inline: 25px;
+    padding-inline: 5%;
     padding-top: 5px;
     padding-bottom: 25px;
     margin: 0;
@@ -40,28 +46,29 @@ body{
     justify-content: left;
     margin-top: 15px;
     margin-bottom: 35px;
-    width: 60%;
-    margin-left: 20%;
     background-color: #ffffffb4;
-}
-#campos-login li{
+  }
+  
+  #campos-login li {
     list-style: none;
     text-align: center;
     font-size: 85%;
     margin: 0;
     margin-top: 15px;
-}
-#campos-login p{
+  }
+  
+  #campos-login p {
     font-size: 75%;
     margin: 0;
     text-align: center;
-}
-#botao_voltar{
+  }
+  
+  #botao_voltar {
     display: flex;
     justify-content: center;
-}
-#botao_voltar a{
-    
+  }
+  
+  #botao_voltar a {
     text-decoration: none;
     list-style: none;
     color: black;
@@ -71,9 +78,25 @@ body{
     background-color: #b4a5a54d;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.473);
     font-size: 15px;
-    font-weight: bolder
-}
-#botao_voltar :hover{
+    font-weight: bolder;
+  }
+  
+  #botao_voltar :hover {
     background-color: #33333359;
     transition: background-color 0.5s ease-in-out;
-}
+  }
+  
+  @media only screen and (min-width: 768px) {
+    body {
+      margin-inline: 15%;
+    }
+  
+    #lista_topicos {
+      margin-inline: 50px;
+    }
+  
+    #campos-login {
+      width: 60%;
+      margin-left: 20%;
+    }
+  }
